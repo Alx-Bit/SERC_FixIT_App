@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Project SPACE</string>
+    <string name="login_text">Login</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="app_logo_content_description">App Logo</string>
+    <string name="enter_email_text">Enter Email</string>
+    <string name="enter_password_text">Enter Password</string>
+    <string name="name_text">Name</string>
+    <string name="phone_number_text">Phone Number</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="new_ticket_text">New Project Request</string>
+    <string name="view_tickets_text">View Proejct Request</string>
+    <string name="account_text">Account</string>
+    <string name="contact_information_text">Contact Us</string>
+    <string name="log_out_text">Log Out</string>
+    <string name="login_prompt_text">Please enter your details below to log in:</string>
+    <string name="dashboard_prompt_text">Hello %1$s!</string>
+    <string name="category_text">Category</string>
+    <string name="ticket_id_text">Ticket ID: %1$s</string>
+    <string name="ticket_details_text">Ticket Details</string>
+    <string name="required_by_text">Required By (Click to Choose)</string>
+    <string name="required_text">Required: %1$s</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="submit_text">Submit</string>
+    <string name="logged_text">Logged: %1$s</string>
+    <string name="select_category_text">Please select a category:</string>
+    <string name="fixit_address"><b>Project SPACE</b>\nBangor Campus\nSouth Eastern Regional College\nCastle Park Road\nBangor\nCounty Down\nBT20 4TD</string>
+    <string name="contact_us_text">Contact Us</string>
+    <string name="fixit_email">info@serc.ac.uk</string>
+    <string name="fixit_phone">0345 600 7555</string>
+    <string name="back_text">Back</string>
+    <string name="account_details_text">Account Details</string>
+    <string name="enter_details_text">Edit your details below and click Save:</string>
+    <string name="save_text">Save</string>
+    <string name="ticket_id_search_text">Enter a ticket ID below and click search (enter -1 to view most recent):</string>
+    <string name="search_id_text">Search ID</string>
+    <string name="search_text">Search</string>
+    <string name="category_view_text">Category: %1$s</string>
+    <string name="view_details_text">Details: %1$s</string>
+    <string name="view_logged_date_text">Logged date: %1$s</string>
+    <string name="view_required_date_text">Required date: %1$s</string>
+    <string-array name="ticket_categories">
+        <item></item>
+        <item>Website</item>
+        <item>Web Application</item>
+        <item>Android App</item>
+        <item>iOS App</item>
+        <item>Cross-Platform App</item>
+        <item>Database System</item>
+        <item>Other: Not Listed</item>
+    </string-array>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:scrollbars="vertical"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_logo_content_description"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="@string/dashboard_prompt_text"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnNewTicket"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="@string/new_ticket_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_view" />
+
+    <Button
+        android:id="@+id/btnViewTickets"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="@string/view_tickets_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_view"/>
+    <Button
+        android:id="@+id/btnAccount"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="@string/account_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_view"/>
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="@string/contact_information_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_view"/>
+    <View
+        android:layout_width="380sp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/separator"/>
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="@string/log_out_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_view"/>
+
+</LinearLayout>

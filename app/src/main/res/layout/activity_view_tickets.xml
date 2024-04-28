@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".ViewTickets"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_logo_content_description"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/view_tickets_text"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:labelFor="@+id/textSearchID"
+        android:padding="10dp"
+        android:text="@string/ticket_id_search_text"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/textSearchID"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:autofillHints="ID"
+            android:background="@drawable/edit_text_box"
+            android:gravity="center"
+            android:hint="@string/search_id_text"
+            tools:ignore="labelFor"
+            android:inputType="numberSigned" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_view"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/search_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTicketID"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:text="@string/ticket_id_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewTicketCategory"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:text="@string/category_view_text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/textViewTicketDetails"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:inputType="none"
+        android:cursorVisible="false"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:text="@string/view_details_text"
+        tools:ignore="labelFor"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewTicketLoggedDate"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:text="@string/view_logged_date_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewTicketRequiredDate"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:text="@string/view_required_date_text"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnViewTicketsBack"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_view"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/back_text"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

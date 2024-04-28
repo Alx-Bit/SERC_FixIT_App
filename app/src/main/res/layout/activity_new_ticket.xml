@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".NewTicket"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_logo_content_description" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/new_ticket_text"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textTicketID"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:text="@string/ticket_id_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:labelFor="@id/spinnerTicketCategory"
+        android:text="@string/select_category_text"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerTicketCategory"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="Category"
+        android:gravity="start|center_vertical"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/textTicketDetails"
+        android:layout_width="380sp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="Ticket Number"
+        android:background="@drawable/edit_text_box"
+        android:gravity="start"
+        android:hint="@string/ticket_details_text"
+        android:inputType="textLongMessage|textMultiLine"
+        android:lines="20"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false" />
+
+    <TextView
+        android:id="@+id/textLogged"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:text="@string/logged_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textRequiredBy"
+        android:layout_width="380sp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_box"
+        android:fontFamily="sans-serif"
+        android:gravity="start|center_vertical"
+        android:text="@string/required_by_text"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_view"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/cancel_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSubmitTicket"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_view"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/submit_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
